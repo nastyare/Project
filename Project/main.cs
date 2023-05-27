@@ -25,26 +25,26 @@ namespace Project
             int ticketType = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Выберите направление:");
-            for (int i = 0; i < directions.Count; ++i)
+            for (int DirectionIndex = 0; DirectionIndex < directions.Count; ++DirectionIndex)
             {
-                Console.WriteLine($"{i + 1} - {directions[i]}");
+                Console.WriteLine($"{DirectionIndex + 1} - {directions[DirectionIndex]}");
             }
             int directionIndex = int.Parse(Console.ReadLine()) - 1;
             string direction = directions[directionIndex];
 
             Console.WriteLine("Выберите дату:");
             List<DateTime> dates = datesByDirection[direction];
-            for (int i = 0; i < dates.Count; ++i)
+            for (int DataIndex = 0; DataIndex < dates.Count; ++DataIndex)
             {
-                Console.WriteLine($"{i + 1} - {dates[i]:dd.MM.yyyy}");
+                Console.WriteLine($"{DataIndex + 1} - {dates[DataIndex]:dd.MM.yyyy}");
             }
             int dateIndex = int.Parse(Console.ReadLine()) - 1;
             DateTime date = dates[dateIndex];
             
             Console.WriteLine("Выберите авиакомпанию:");
-            for (int i = 0; i < airlines.Count; ++i)
+            for (int AirlinesIndex = 0; AirlinesIndex < airlines.Count; ++AirlinesIndex)
             {
-                Console.WriteLine($"{i + 1} - {airlines[i]}");
+                Console.WriteLine($"{AirlinesIndex + 1} - {airlines[AirlinesIndex]}");
             }
             int airlineIndex = int.Parse(Console.ReadLine()) - 1;
             string airline = airlines[airlineIndex];
