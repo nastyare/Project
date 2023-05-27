@@ -7,7 +7,9 @@ namespace IndividualProject
         public string Direction { get; set; }
         public DateTime Date { get; set; }
         public string Airline { get; set; }
-        public string TicketClass { get; protected set; }
+        public string TicketClass { get; set; }
+        public string TicketClass { get; set; }
+
     }
     class EconomyTicket : Ticket
     {
