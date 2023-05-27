@@ -17,6 +17,7 @@ namespace Project
             };
             TicketFactory EconomyTicket = new EconomyTicketFactory();
             TicketFactory BusinessTicket = new BusinessTicketFactory();
+
             
             //менюшка
             Console.WriteLine("Выберите тип билета:");
