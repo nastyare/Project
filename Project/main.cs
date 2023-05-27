@@ -63,6 +63,25 @@ namespace Project
                 Console.WriteLine("Неверный тип билета.");
                 return;
             }
+            
+            
+            Console.WriteLine("Ваш билет:");
+            Console.WriteLine($"Направление: {ticket.Direction}");
+            Console.WriteLine($"Дата: {ticket.Date:dd.MM.yyyy}");
+            Console.WriteLine($"Авиакомпания: {ticket.Airline}");
+            Console.WriteLine($"Класс: {ticket.TicketClass}");
+            
+            Console.WriteLine("Хотите подтвердить бронирование? (Да/Нет)");
+            string Сonfirmation = Console.ReadLine();
+            if (Сonfirmation.ToLower() == "да")
+            {
+                Console.WriteLine("Бронирование подтверждено!");
+                isBookingConfirmed = true;
+            }
+            else
+            {
+                Console.WriteLine("Бронирование отменено.");
+            }
         }
     }
 }
